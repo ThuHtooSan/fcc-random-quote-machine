@@ -1,0 +1,21 @@
+@use '../../sass/variables.scss' as *;
+@use '../../sass/mixins.scss' as *;
+
+.header {
+  width: 100%;
+  @include flex-col(10px);
+  align-items: center;
+  text-align: center;
+  margin-block: 15vh 5vh;
+
+  .sub-title {
+    font-size: 0.9rem;
+    @include flex-row(5px);
+    font-weight: normal;
+
+    .fcc-logo {
+      margin-top: 2px;
+      width: 110px;
+    }
+  }
+}

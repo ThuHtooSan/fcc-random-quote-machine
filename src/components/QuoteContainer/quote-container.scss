@@ -1,0 +1,49 @@
+@use '../../sass/variables.scss' as *;
+@use '../../sass/mixins.scss' as *;
+
+.quote-container {
+  position: relative;
+  width: 100%;
+  @include flex-col(20px);
+  background: $secondary;
+  padding: 15px 20px;
+  border-radius: $border-radius;
+  box-shadow: $box-shadow;
+
+  .tag {
+    position: absolute;
+    top: -35px;
+    left: 5px;
+    border-left: 4px solid $secondary;
+    padding-left: 7px;
+    padding-block: 2px;
+  }
+
+  .quote {
+    font-family: 'Zilla Slab', serif;
+    font-size: 1.1rem;
+
+    .quote-icon {
+      font-size: 3rem;
+      margin-inline: 10px;
+      color: $sage;
+    }
+  }
+
+  .quote-footer {
+    @include flex-row;
+    justify-content: space-between;
+
+    .tweet {
+      text-decoration: none;
+      background: $sage;
+      color: $white;
+      width: 30px;
+      height: 30px;
+      border-radius: $border-radius;
+      font-size: 0.9rem;
+      @include flex-row-center;
+      box-shadow: $box-shadow;
+    }
+  }
+}

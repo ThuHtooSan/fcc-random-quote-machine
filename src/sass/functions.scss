@@ -1,0 +1,10 @@
+@function adaptive-text($bg) {
+  $yiq-sum: color.red($bg) * 299 + color.green($bg) * 587 + color.blue($bg) * 114;
+  $brightness: math.round(math.div($yiq-sum, 1000));
+
+  @if ($brightness > 125) {
+    @return black;
+  } @else {
+    @return white;
+  }
+}

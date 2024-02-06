@@ -1,0 +1,31 @@
+@use '../../sass/variables.scss' as *;
+@use '../../sass/mixins.scss' as *;
+
+.new-quote {
+  position: absolute;
+  bottom: 140px;
+  left: 0;
+  right: 0;
+  background: $primary;
+  border-radius: $pill-border;
+  box-shadow: $box-shadow;
+  color: $white;
+  padding: 10px 15px;
+  width: max-content;
+  margin-inline: auto;
+  @include flex-row-center(5px);
+  cursor: pointer;
+
+  select {
+    appearance: none;
+    background: transparent;
+    border: none;
+    color: inherit;
+    font-size: inherit;
+    cursor: pointer;
+    // width: 88px;
+    margin-inline: 2px;
+    text-align: center;
+    border-bottom: 2px dotted $white;
+  }
+}
