@@ -45,5 +45,9 @@
       @include flex-row-center;
       box-shadow: $box-shadow;
     }
+
+    .author {
+      text-align: right;
+    }
   }
 }

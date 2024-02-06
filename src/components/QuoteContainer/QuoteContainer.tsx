@@ -51,7 +51,7 @@ const QuoteContainer = () => {
         <a
           className='tweet'
           id='tweet-quote'
-          href={`https://twitter.com/intent/tweet?text=${quote?.content}&hashtags=%23quote`}
+          href={`https://x.com/intent/tweet?text=${quote?.content}%20%E2%80%94${quote?.author}&hashtags=quote`}
           title='Tweet this quote'
         >
           <FontAwesomeIcon icon={faTwitter} />
