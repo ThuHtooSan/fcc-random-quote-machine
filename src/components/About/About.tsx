@@ -80,7 +80,7 @@ const About = () => {
               <p className='source-code'>
                 View source code at{' '}
                 <a
-                  href='http://github.com/thuhtoosan/weather-seeker'
+                  href='https://github.com/ThuHtooSan/fcc-random-quote-machine'
                   target='_blank'
                   rel='noopener noreferrer'
                   className='bold'
