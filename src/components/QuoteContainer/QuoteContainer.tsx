@@ -6,7 +6,6 @@ import Skeleton from 'react-loading-skeleton';
 import { useEffect } from 'react';
 import { useAppDispatch, useAppSelector } from '../../hooks/reduxTypedHooks';
 import { fetchQuote } from '../../redux/quoteSlice';
-import quote from '../../../db/quote.json';
 import { motion } from 'framer-motion';
 
 const QuoteContainer = () => {
